@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Hệ Thống Đặt Phòng Khách Sạn
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ứng dụng quản lý và đặt phòng khách sạn full-stack với bảng điều khiển quản trị, cổng nhân viên và giao diện đặt phòng cho khách hàng.
 
-## Available Scripts
+## Tính Năng Chính
 
-In the project directory, you can run:
+### Tính Năng Cho Khách Hàng
+- Tìm kiếm và duyệt phòng khách sạn
+- Xem chi tiết phòng, tiện nghi và hình ảnh
+- Đặt phòng trực tuyến
+- Nhiều phương thức thanh toán (thanh toán online, thanh toán tại khách sạn)
+- Xem lịch sử đặt phòng
+- Đánh giá và xếp hạng
+- Quản lý thông tin cá nhân và tài khoản
+- Tải xuống xác nhận đặt phòng dưới dạng PDF
 
-### `npm start`
+### Tính Năng Cho Quản Trị Viên
+- Quản lý phòng và loại phòng
+- Cấu hình tiện nghi và dịch vụ phòng
+- Thiết lập giá phòng và tình trạng phòng
+- Xử lý đặt phòng và đặt chỗ
+- Quản lý tài khoản khách hàng
+- Xem báo cáo đặt phòng và thống kê
+- Cấu hình thông tin và hình ảnh khách sạn
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tính Năng Cho Nhân Viên
+- Nhận phòng/trả phòng cho khách
+- Xử lý thanh toán
+- Quản lý trạng thái phòng
+- Xử lý yêu cầu của khách hàng
+- Xem nhiệm vụ được giao
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Công Nghệ Sử Dụng
 
-### `npm test`
+### Frontend (GD_Booking)
+- React.js
+- Bootstrap cho giao diện người dùng
+- JWT cho xác thực
+- Form validation
+- Upload ảnh lên Firebase
+- Tạo PDF
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend (Hotel_Stars)
+- Spring Boot
+- Spring Security 
+- JPA/Hibernate
+- Cơ sở dữ liệu MySQL
+- RESTful APIs
+- Thông báo qua email
+- Tạo PDF
 
-### `npm run build`
+## Các Module Chính
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Quản Lý Phòng
+- Thêm/sửa/xóa phòng
+- Cấu hình loại phòng
+- Thiết lập tiện nghi
+- Quản lý trạng thái phòng
+- Tải lên hình ảnh phòng
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Quản Lý Đặt Phòng
+- Xử lý đặt phòng
+- Xử lý thanh toán
+- Gửi xác nhận
+- Tạo hóa đơn
+- Theo dõi trạng thái đặt phòng
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Quản Lý Người Dùng
+- Tài khoản khách hàng
+- Tài khoản nhân viên
+- Phân quyền truy cập
+- Quản lý thông tin cá nhân
 
-### `npm run eject`
+### Quản Lý Dịch Vụ
+- Dịch vụ phòng
+- Gói dịch vụ
+- Tiện nghi
+- Định giá
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Đánh Giá & Xếp Hạng
+- Đánh giá của khách hàng
+- Xếp hạng sao
+- Xử lý phản hồi
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Hướng Dẫn Cài Đặt
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone repository
+2. Cấu hình kết nối database
+3. Cài đặt các dependencies
+4. Chạy server backend
+5. Chạy ứng dụng frontend
+6. Truy cập trang quản trị tại /admin
+7. Truy cập cổng khách hàng tại /client
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tài Liệu API
+Có sẵn tại `/api/docs`
