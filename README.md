@@ -72,20 +72,6 @@ npm start
 ```
 Ứng dụng sẽ chạy tại http://localhost:3000
 
-## Tài Khoản Demo
-
-### Admin
-- Username: admin
-- Password: admin123
-
-### Nhân Viên
-- Username: employee
-- Password: employee123
-
-### Khách Hàng
-- Username: customer
-- Password: customer123
-
 ## Tài Liệu API
 
 - API Documentation: http://localhost:8080/swagger-ui.html
